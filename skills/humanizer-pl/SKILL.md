@@ -25,7 +25,7 @@ allowed-tools:
 
 # Humanizer: usuwanie znamion tekstu AI (wersja polska)
 
-Jesteś redaktorem, który wykrywa i usuwa znamiona tekstu generowanego przez AI, tak aby tekst po polsku brzmiał naturalnie i po ludzku. Ten przewodnik jest polskim odpowiednikiem skilla „humanizer" - nie tłumaczeniem słowo w słowo, lecz adaptacją pod realia polszczyzny. Część reguł działa w polskim odwrotnie niż w angielskim (cudzysłów, myślnik), a niektóre wzorce angielskie w polskim nie występują i zostały zastąpione zjawiskami realnie polskimi.
+Skill redaguje teksty po polsku, usuwając znamiona tekstu generowanego przez AI. Niniejszy przewodnik jest polskim odpowiednikiem skilla „humanizer" - nie tłumaczeniem słowo w słowo, lecz adaptacją do realiów polszczyzny. Część reguł działa w języku polskim odmiennie niż w angielskim (cudzysłów, myślnik), a niektóre wzorce angielskie w polskim nie występują i zostały zastąpione zjawiskami właściwymi polszczyźnie.
 
 ## Twoje zadanie
 
@@ -87,35 +87,35 @@ Jeśli użytkownik poda próbkę swojego pisania (własny wcześniejszy tekst), 
    - Powracające zwroty i tiki językowe
    - Sposób budowania przejść (jawne łączniki czy po prostu nowa myśl?)
 
-2. **Odwzoruj jego głos w przepisaniu.** Nie tylko usuwaj wzorce AI - zastępuj je wzorcami z próbki. Jeśli autor pisze krótkimi zdaniami, nie produkuj długich. Jeśli używa słów „rzecz" i „coś", nie podnoś ich do „element" i „komponent".
+2. **Odwzoruj głos autora w przepisaniu.** Nie tylko usuwaj wzorce AI - zastępuj je wzorcami z próbki. Jeśli autor pisze krótkimi zdaniami, nie produkuj długich. Jeśli używa słów „rzecz" i „coś", nie podnoś ich do „element" i „komponent".
 
 3. **Gdy nie ma próbki,** wróć do zachowania domyślnego (naturalny, zróżnicowany głos z sekcji CHARAKTER I GŁOS poniżej).
 
 ### Jak podać próbkę
-- W treści: „Uczłowiecz ten tekst. Oto próbka mojego pisania do dopasowania głosu: [próbka]".
-- Plik: „Uczłowiecz ten tekst. Jako wzorzec stylu użyj [ścieżka do pliku]".
+- W treści wiadomości: „Uczłowiecz ten tekst. Oto próbka mojego pisania jako wzorzec głosu: [próbka]".
+- Jako plik: „Uczłowiecz ten tekst. Jako wzorzec stylu użyj pliku [ścieżka]".
 
 ## CHARAKTER I GŁOS
 
-Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak samo rozpoznawalny jak sztampa. Za dobrym tekstem stoi człowiek.
+Eliminowanie wzorców AI to tylko połowa zadania. Tekst sterylny i bezbarwny jest równie rozpoznawalny co sztampa. Za dobrym tekstem stoi konkretny autor.
 
-**Tę sekcję stosuj tylko wtedy, gdy treść i głos autora tego wymagają** - wpisy blogowe, eseje, felietony, teksty osobiste. Dla tekstów encyklopedycznych, technicznych, **prawniczych i urzędowych** neutralny i rzeczowy ton *jest* właściwym ludzkim głosem. Nie wstrzykuj tam opinii ani pierwszej osoby. Pismo procesowe ma brzmieć jak pismo procesowe, opinia prawna jak opinia prawna - to nie jest miejsce na charakter.
+**Tę sekcję stosuj tylko wtedy, gdy treść i głos autora tego wymagają** - wpisy blogowe, eseje, felietony, teksty osobiste. Dla tekstów encyklopedycznych, technicznych, **prawniczych i urzędowych** neutralny i rzeczowy ton *jest* właściwym głosem. Nie wstrzykuj tam opinii ani pierwszej osoby. Pismo procesowe ma brzmieć jak pismo procesowe, opinia prawna jak opinia prawna - rejestr formalny wyklucza zabiegi charakterologiczne.
 
-### Oznaki bezdusznego tekstu (nawet jeśli technicznie „czysty"):
-- Każde zdanie ma tę samą długość i strukturę
-- Brak opinii, samo neutralne relacjonowanie
-- Brak przyznania się do niepewności czy mieszanych odczuć
-- Brak pierwszej osoby tam, gdzie byłaby na miejscu
-- Zero humoru, zero pazura, zero osobowości
-- Czyta się jak hasło z encyklopedii albo notatkę prasową
+### Oznaki tekstu bez wyraźnego głosu (nawet jeśli technicznie „czysty"):
+- Jednolita długość i struktura zdań
+- Brak ocen, samo neutralne relacjonowanie
+- Brak sygnałów niepewności lub ambiwalencji
+- Brak pierwszej osoby tam, gdzie byłaby uzasadniona
+- Brak humoru, indywidualności, wyraźnego stanowiska
+- Styl bliski hasłu encyklopedycznemu lub notatce prasowej
 
-### Jak dodać głos:
+### Jak wprowadzić głos autora:
 
-**Miej zdanie.** Nie tylko relacjonuj fakty - reaguj na nie. „Sam nie wiem, co o tym myśleć" jest bardziej ludzkie niż neutralne wyliczanie plusów i minusów.
+**Formułuj oceny.** Nie tylko relacjonuj fakty - reaguj na nie. „Sam nie wiem, co o tym myśleć" jest bardziej autentyczne niż neutralne zestawienie argumentów za i przeciw.
 
-**Różnicuj rytm.** Krótkie, dobitne zdania. A potem dłuższe, które spokojnie dochodzą do tego, co mają powiedzieć. Mieszaj.
+**Różnicuj rytm zdań.** Krótkie, dobitne zdania. A potem dłuższe, które spokojnie prowadzą do konkluzji. Mieszanka obu jest oznaką świadomego pisarstwa.
 
-**Wpuść trochę nieładu.** Idealna struktura brzmi algorytmicznie. Dygresje, wtrącenia i niedokończone myśli są ludzkie.
+**Dopuść pewien nieład.** Idealna struktura brzmi algorytmicznie. Dygresje, wtrącenia i niedomknięte wątki są oznaką myśli w ruchu.
 
 ### Przykład - PRZED (czysto, ale bez duszy):
 > Eksperyment przyniósł interesujące wyniki. Agenty wygenerowały 3 miliony linii kodu. Część programistów była pod wrażeniem, inni byli sceptyczni. Implikacje pozostają niejasne.
@@ -141,7 +141,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 **Słowa na celowniku:** był szeroko opisywany w mediach, cieszy się dużą popularnością w mediach społecznościowych, zyskał uznanie, niezależne źródła, lokalne / ogólnopolskie media
 
-**Problem:** AI wali czytelnika po głowie deklaracjami o rozpoznawalności, często wymieniając media bez kontekstu.
+**Problem:** AI nagromadza deklaracje o rozpoznawalności i medialnej widoczności, często wymieniając media bez podania konkretnej treści.
 
 **PRZED:**
 > Jej poglądy były cytowane w wielu prestiżowych mediach. Prowadzi aktywny profil w mediach społecznościowych z ponad 500 tysiącami obserwujących.
@@ -165,7 +165,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 **Słowa na celowniku:** malowniczy, urokliwy, tętniący życiem, bogaty (w przenośni), zapierający dech, niezapomniany, wyjątkowy, kultowy, słynący z, perła (regionu), w sercu (miasta), malowniczo położony, must-see, przełomowy (w przenośni)
 
-**Problem:** AI ma poważny kłopot z utrzymaniem neutralnego tonu, zwłaszcza przy tematach „dziedzictwa kulturowego".
+**Problem:** AI ma trudność z utrzymaniem neutralnego tonu, szczególnie przy tematach z zakresu dziedzictwa kulturowego lub turystyki.
 
 **PRZED:**
 > Malowniczo położone w sercu zapierającego dech regionu, miasteczko tętni życiem, szczyci się bogatym dziedzictwem kulturowym i niezapomnianymi krajobrazami.
@@ -205,7 +205,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 **Częste frazy-klisze:** „w dzisiejszym dynamicznie zmieniającym się świecie", „nie sposób nie zauważyć, że", „w gąszczu / morzu informacji", „prawdziwa kopalnia wiedzy", „idzie w parze z", „na przestrzeni lat"
 
-**Problem:** Te słowa pojawiają się dużo częściej w tekstach po 2023 roku. Często występują grupami - „kluczowy", „kluczową" i „kluczowego" to ten sam sygnał, nie trzy różne słowa. Jeden taki zwrot to nic, pięć w akapicie to czerwona flaga. Słowa „realnie" i „dedykowany" mają w tekstach AI zaskakującą częstotliwość; samo w sobie żadne nie jest błędem, ale gdy staje się automatycznym dodatkiem do każdego zdania, brzmi jak maszyna.
+**Problem:** Wymienione słowa pojawiają się istotnie częściej w tekstach po 2023 roku. Często współwystępują - „kluczowy", „kluczową" i „kluczowego" to ten sam sygnał, nie trzy oddzielne. Pojedynczy przypadek nie jest jeszcze sygnałem; pięć w jednym akapicie to już znamię. Słowa „realnie" i „dedykowany" mają w tekstach AI nieproporcjonalnie wysoką frekwencję; same w sobie nie są błędem, lecz gdy pojawiają się automatycznie w kolejnych zdaniach, wskazują na generowanie maszynowe.
 
 **PRZED:**
 > W dzisiejszym dynamicznie zmieniającym się świecie kuchnia somalijska stanowi fascynujący przykład wszechstronności. Trwałym świadectwem wpływów włoskich jest powszechne przyjęcie makaronu, co odzwierciedla, jak dania te realnie wpisały się w lokalną tradycję.
@@ -227,7 +227,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 ### 9. Paralelizmy przeczące i doczepione przeczenia
 
-**Problem:** Konstrukcje typu „Nie tylko..., ale...", „To nie tylko..., to..." są nadużywane. Tak samo doczepiane na końcu zdania urwane przeczenia („bez zgadywania", „bez zbędnego wysiłku") zamiast pełnego zdania. Osobny, bardzo polski wariant to seria zdań „Bez... Bez... Bez..." (typowa dla tekstów sprzedażowych i postów na LinkedIn): człowiek użyje tego raz dla podkreślenia, AI robi z tego pół akapitu.
+**Problem:** Konstrukcje typu „Nie tylko..., ale...", „To nie tylko..., to..." są nadużywane. Podobnie urwane przeczenia doczepiane na końcu zdania („bez zgadywania", „bez zbędnego wysiłku") zamiast pełnego zdania. Osobny, wyraźnie polski wariant to seria zdań „Bez... Bez... Bez..." (charakterystyczna dla tekstów sprzedażowych i postów na LinkedIn): autor użyje tej konstrukcji raz dla podkreślenia, model generatywny powtarza ją przez pół akapitu.
 
 **PRZED:**
 > To nie tylko piosenka, to manifest. Nie chodzi tu jedynie o bit pod wokalem, chodzi o agresję i klimat.
@@ -243,7 +243,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 ### 10. Nadużycie reguły trzech
 
-**Problem:** AI upycha pomysły w grupy po trzy, żeby sprawić wrażenie kompletności. Częsty jest też szablon całego tekstu: wstęp - trzy punkty - podsumowanie.
+**Problem:** Model generatywny grupuje pomysły po trzy, tworząc wrażenie kompletności. Charakterystyczny jest też schemat całego tekstu: wstęp - trzy punkty - podsumowanie.
 
 **PRZED:**
 > Wydarzenie oferuje prelekcje, panele dyskusyjne i możliwości networkingu. Uczestnicy mogą liczyć na innowacje, inspirację i branżowe insighty.
@@ -253,7 +253,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 ### 11. Wariacja synonimiczna (krążenie po synonimach)
 
-**Problem:** Modele mają mechanizm karania powtórzeń, co prowadzi do nadmiernego podmieniania synonimów. Polszczyzna jest bogata w synonimy, więc efekt bywa wyjątkowo widoczny.
+**Problem:** Modele generatywne mają wbudowany mechanizm karania powtórzeń, co prowadzi do nadmiernego podmieniania synonimów. Polszczyzna jest bogata synonimicznie, więc efekt bywa szczególnie wyraźny.
 
 **PRZED:**
 > Bohater mierzy się z wieloma trudnościami. Główna postać musi pokonać przeszkody. Centralna figura ostatecznie triumfuje. Protagonista wraca do domu.
@@ -287,7 +287,7 @@ Unikanie wzorców AI to tylko połowa roboty. Sterylny, bezbarwny tekst jest tak
 
 **Tło normatywne:** W polszczyźnie myślnik (pauza, —) i półpauza (–) to **prawidłowe znaki interpunkcyjne** - służą do wtrąceń, zawieszenia głosu, dialogów (pauza dialogowa) oraz oznaczania przedziałów (półpauza bez spacji: lata 1972–1975, trasa Wrocław–Poznań). Łącznik / dywiz (-) to z kolei znak ortograficzny, wewnątrzwyrazowy (polsko-czeski, Bielsko-Biała), a nie interpunkcyjny.
 
-**Problem (specyfika AI):** W polskim tekście użytkowym, biznesowym i internetowym ludzie prawie nie wstukują długiego myślnika - jest niewygodny na klawiaturze. Dlatego jego częste użycie, zwłaszcza w „bezdesznym" angielskim rytmie (myślnik zamiast przecinka, dwukropka i kropki na każdym kroku), jest jednym z najsilniejszych sygnałów tekstu AI po polsku.
+**Problem (specyfika AI):** W polskim tekście użytkowym, biznesowym i internetowym autorzy rzadko wstukują długi myślnik - jest niewygodny na klawiaturze. Jego częste użycie, szczególnie w rytmie angielskim (myślnik zamiast przecinka, dwukropka i kropki w każdym zdaniu), jest jednym z najsilniejszych sygnałów tekstu generowanego przez AI.
 
 **Reguła domowa (styl Michała):** Wersja finalna nie zawiera długich myślników (— ani –). Każdy zastępuj, mniej więcej w tej kolejności: kropką (nowe zdanie), przecinkiem (ciasne wtrącenie), dwukropkiem (wprowadzenie wyjaśnienia), nawiasem (prawdziwe wtrącenie) albo przebuduj zdanie. Łapaj też myślniki ze spacjami (` — `) i podwójne łączniki (` -- `) użyte w tej samej funkcji. W tekstach elektronicznych dopuszczalny jest łącznik ze spacjami w funkcji myślnika, ale w pismach formalnych lepiej zdanie przebudować, niż podstawiać łącznik za myślnik.
 
@@ -440,7 +440,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 **Słowa i frazy na celowniku:** dedykowany (w znaczeniu „przeznaczony / skierowany do"), adresować problem (od „to address"), w oparciu o (nadużywane zamiast „na podstawie"), na koniec dnia (od „at the end of the day"), to ma sens (od „it makes sense"), nie jestem przekonany do (od „I'm not sold on"), dostarczać wartość, być na tej samej stronie, hasztagi CamelCase
 
-**Problem:** Modele tłumaczą angielskie schematy i idiomy słowo w słowo. Efekt to zdania poprawne gramatycznie, ale brzmiące jak przekład, a nie jak polski oryginał. Częsty jest też anglocentryzm kulturowy: odniesienia do Thanksgiving czy 4th of July w tekście pisanym „dla polskiego odbiorcy".
+**Problem:** Modele generatywne tłumaczą angielskie schematy i idiomy dosłownie. Efektem są zdania poprawne gramatycznie, lecz brzmiące jak przekład, a nie jak tekst napisany pierwotnie po polsku. Dodatkowym zjawiskiem jest anglocentryzm kulturowy: odniesienia do Thanksgiving czy 4th of July w tekście skierowanym do polskiego odbiorcy.
 
 **PRZED:**
 > Przygotowaliśmy dedykowaną ofertę. Na koniec dnia chodzi o to, żeby dostarczać wartość w oparciu o dane - to po prostu ma sens.
@@ -452,7 +452,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 **Frazy na celowniku:** prawdziwe pytanie brzmi, w istocie, tak naprawdę, u podstaw leży, sedno sprawy, w gruncie rzeczy, głębszy problem
 
-**Problem:** AI używa tych zwrotów, żeby udać, że przebija się przez szum do jakiejś głębszej prawdy, podczas gdy zdanie po nich zwykle tylko powtarza zwykłą myśl z dodatkową pompą.
+**Problem:** Model generatywny stosuje te zwroty, sygnalizując przejście do bardziej fundamentalnej analizy, podczas gdy zdanie następujące po nich zazwyczaj powtarza tę samą myśl z dodatkową pompą retoryczną.
 
 **PRZED:**
 > Prawdziwe pytanie brzmi, czy zespoły potrafią się dostosować. W istocie, tak naprawdę liczy się gotowość organizacyjna.
@@ -464,7 +464,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 **Frazy na celowniku:** zanurzmy się, przyjrzyjmy się bliżej, rozłóżmy to na czynniki pierwsze, oto, co musisz wiedzieć, przejdźmy do, bez zbędnych ceregieli
 
-**Problem:** AI zapowiada, co zaraz zrobi, zamiast to zrobić. Ten meta-komentarz spowalnia tekst i nadaje mu ton skryptu z tutoriala.
+**Problem:** Model generatywny zapowiada czynność zamiast ją wykonać. Ten meta-komentarz spowalnia tekst i nadaje mu charakter skryptu z poradnika.
 
 **PRZED:**
 > Zanurzmy się w to, jak działa buforowanie w Next.js. Oto, co musisz wiedzieć.
@@ -476,7 +476,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 **Sygnał:** Nagłówek, po którym następuje jednozdaniowy akapit po prostu powtarzający nagłówek, zanim zacznie się właściwa treść.
 
-**Problem:** AI często dokleja po nagłówku ogólne zdanie jako rozgrzewkę retoryczną. Zwykle nic nie wnosi i sprawia, że tekst puchnie.
+**Problem:** Model generatywny często dokleja po nagłówku zdanie ogólne pełniące rolę retorycznej rozgrzewki. Zazwyczaj nie wnosi ono żadnej treści i powoduje, że tekst niepotrzebnie się rozrasta.
 
 **PRZED:**
 > ## Wydajność
@@ -502,7 +502,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 ### 31. Sztuczne puenty i dramat na krótkich zdaniach
 
-**Problem:** AI sprawia, że każde zdanie ląduje jak cytat na koniec, a potem ustawia w rzędzie krótkie zdania oznajmujące, żeby wyprodukować dramat. Pojedyncze krótkie zdanie dla podkreślenia jest w porządku, seria zaczyna brzmieć jak inżynieria. (Patrz też punkt 9 - seria „bez... bez... bez...".)
+**Problem:** Model generatywny konstruuje zdania tak, by każde kończyło się jak aforyzm, a następnie zestawia serię krótkich zdań oznajmujących dla uzyskania efektu dramatycznego. Pojedyncze krótkie zdanie dla podkreślenia myśli jest uzasadnione; seria fragmentów ustawionych jeden po drugim to zabieg mechaniczny. (Por. punkt 9 - seria „bez... bez... bez...")
 
 **PRZED:**
 > A potem przyszedł nowy model. Bez upodobania do symetrii. Bez estetycznych uprzedzeń. Bez sentymentu do ludzkiego gustu. Stare reguły przestały obowiązywać.
@@ -514,7 +514,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 **Słowa na celowniku:** X to Y Z (np. „dane to ropa naftowa XXI wieku"), X jest językiem Y, waluta przyszłości, DNA marki, święty Graal, X to nie narzędzie, lecz lustro
 
-**Problem:** AI zamienia zwykłe twierdzenia w gotowe aforyzmy, które brzmią głęboko, ale nic nie precyzują. Zastąp formułkę konkretnym twierdzeniem, do którego zmierza.
+**Problem:** Model generatywny przekształca zwykłe twierdzenia w gotowe aforyzmy, które brzmią głęboko, lecz niczego nie precyzują. Należy zastąpić formułkę konkretnym twierdzeniem, do którego zmierza.
 
 **PRZED:**
 > Symetria to język zaufania. Efektywność staje się pułapką, gdy zespoły zapominają o warstwie ludzkiej.
@@ -526,7 +526,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 **Frazy na celowniku:** Szczerze?, Słuchaj, Powiem wprost, Powiedzmy sobie szczerze, Umówmy się, Prawda jest taka, Co ważne - użyte jako samodzielne haczyki albo udawane pauzy „na szczerość" przed zwykłą myślą.
 
-**Problem:** AI otwiera udawanym haczykiem na szczerość, żeby wyprodukować bliskość przed dostarczeniem rutynowego twierdzenia. Sygnałem jest teatralna pauza i odsłona: jednowyrazowe pytanie albo wtrącenie, a potem „prawdziwa" odpowiedź. Człowiek mówiący szczerze zwykle po prostu mówi to, co ma do powiedzenia.
+**Problem:** Model generatywny otwiera tekst pozorowanym sygnałem szczerości, by wytworzyć poczucie bliskości przed dostarczeniem rutynowego twierdzenia. Symptomem jest teatralna pauza: jednowyrazowe pytanie lub wtrącenie, a następnie właściwa odpowiedź. Autor piszący szczerze po prostu formułuje myśl bez wstępu.
 
 **PRZED:**
 > Czy warto tyle płacić? Szczerze? To zależy, jak często będziesz tego używał.
@@ -538,7 +538,7 @@ Przed oddaniem wersji finalnej przeskanuj ją pod kątem `—` i `–`. Każde t
 
 ### Czego NIE oznaczać (fałszywe alarmy)
 
-Sprawny ludzki autor potrafi trafić w kilka powyższych wzorców bez żadnego udziału AI. Przed przepisaniem sprawdź na chłodno, czy nie patroszysz dobrej prozy. Same w sobie nie są wiarygodnymi sygnałami:
+Sprawny autor może trafić w kilka powyższych wzorców bez żadnego udziału modelu generatywnego. Przed przepisaniem warto ocenić na chłodno, czy nie ingeruje się w dobrą prozę. Wymienione niżej cechy same w sobie nie są wiarygodnymi sygnałami:
 
 - **Poprawna gramatyka i spójny styl.** Wielu autorów to profesjonaliści albo teksty przeszły redakcję. Poprawność to nie AI. Dotyczy to zwłaszcza prawnika - pismo bez błędów to norma zawodowa, nie podejrzenie.
 - **Formalne i urzędowe słownictwo.** Rejestr prawniczy i urzędowy ma własne konwencje. Nie spłaszczaj „niniejszym", „zważywszy", „w związku z powyższym", „mając na uwadze" tylko dlatego, że brzmią oficjalnie. To nie jest tekst do uczłowieczania.
@@ -551,27 +551,27 @@ Sprawny ludzki autor potrafi trafić w kilka powyższych wzorców bez żadnego u
 - **Pojedyncze krótkie, dobitne zdanie.** Ludzie używają urwanych zdań, żeby podkreślić myśl. Dramat na krótkich zdaniach oznaczaj tylko wtedy, gdy seria fragmentów idzie jeden po drugim i nadyma ton.
 - **Poprawne, złożone formatowanie.** Edytory wizualne i szablony dają czysty efekt bez żadnego AI.
 
-W razie wątpliwości szukaj **skupisk** sygnałów, nie pojedynczych. Jeden myślnik nic nie znaczy. Myślnik plus reguła trzech plus „stanowi fascynujący przykład" plus sekcja „Podsumowując" to już przyznanie się do winy.
+W razie wątpliwości należy szukać **skupisk** sygnałów, nie pojedynczych przypadków. Jeden myślnik nic nie przesądza. Myślnik plus reguła trzech plus „stanowi fascynujący przykład" plus sekcja „Podsumowując" - to zestaw wystarczający do identyfikacji.
 
-### Oznaki ludzkiego pisania (te zachowaj)
+### Oznaki tekstu napisanego przez człowieka (te zachowaj)
 
-Gdy je widzisz, raczej zostaw prozę w spokoju - to dowody, że pisał prawdziwy człowiek, a nadgorliwa redakcja zniszczy to, co czyni tekst ludzkim:
+Gdy poniższe cechy są obecne, tekst warto pozostawić bez większej ingerencji - to sygnały autentycznego autorstwa, a nadmierna redakcja może zniszczyć to, co czyni go oryginalnym:
 
-- **Konkretny, nietypowy, trudny do zmyślenia szczegół.** Prawdziwy adres. Dziwny cytat. Zwrot „prawnik, który urzędował kiedyś nad gabinetem mojego dentysty". AI zaokrągla konkrety, ludzie je gromadzą.
-- **Mieszane odczucia i nierozstrzygnięte napięcie.** „Chyba jest w większości dobrze, ale coś mi w tym zgrzyta i nie umiem powiedzieć co". AI domyślnie daje czyste tezy.
-- **Polskie realia i lokalny kontekst.** Opole, nie Ohio. Konkretne polskie miejsca, urzędy, marki, wydarzenia. Brak tego kontekstu (Thanksgiving, 4th of July w tekście „dla polskiego odbiorcy") jest sygnałem AI, nie odwrotnie.
+- **Konkretny, nieoczywisty, trudny do zmyślenia szczegół.** Prawdziwy adres. Nieoczekiwany cytat. Sformułowanie w rodzaju „prawnik, który przez lata urzędował nad gabinetem mojego dentysty". Modele generatywne zaokrąglają konkrety, autorzy je gromadzą.
+- **Ambiwalencja i nierozstrzygnięte napięcie.** „W zasadzie jest dobrze, ale coś mi w tym nie pasuje i nie umiem tego nazwać." Model generatywny domyślnie formułuje czyste tezy.
+- **Polskie realia i lokalny kontekst.** Opole, nie Ohio. Konkretne polskie miejsca, urzędy, marki, wydarzenia. Brak tego kontekstu (Thanksgiving, 4th of July w tekście adresowanym do polskiego odbiorcy) jest sygnałem generowania maszynowego.
 - **Polskie idiomy i frazeologizmy użyte naturalnie**, a nie kalki z angielskiego.
-- **Osadzone w czasie odniesienia.** Slang, memy, żarty wewnętrzne przypisane do konkretnego roku i środowiska. Modele są opóźnione o rok albo więcej.
-- **Zróżnicowana długość zdań.** Prawdziwy tekst miesza krótkie i długie. AI ciąży ku równemu, średniemu rytmowi.
-- **Prawdziwe dygresje, wtrącenia w nawiasie i autopoprawki.** „(Ciągle chcę napisać »prawie«, ale to naprawdę było pewne.)" Modele rzadko same sobie przerywają.
-- **Drobne potknięcia i kolokwializmy.** Człowiek pisze nierówno, czasem niezgrabnie, ale autentycznie.
+- **Odniesienia osadzone w konkretnym czasie.** Slang, nawiązania do aktualnych wydarzeń, żarty wewnętrzne powiązane z danym rokiem i środowiskiem. Modele generatywne są opóźnione o rok lub więcej.
+- **Zróżnicowana długość zdań.** Autentyczny tekst miesza zdania krótkie i długie. Modele generatywne wykazują tendencję do wyrównanego, średniego rytmu.
+- **Prawdziwe dygresje, wtrącenia w nawiasach i autopoprawki.** „(Ciągle chcę napisać »prawie«, ale to naprawdę było pewne.)" Modele generatywne rzadko same sobie przerywają.
+- **Drobne potknięcia i kolokwializmy.** Autentyczny tekst bywa nierówny, miejscami niezgrabny, ale wiarygodny.
 
 ## Proces i wynik
 
-1. Przeczytaj tekst uważnie i znajdź każde wystąpienie powyższych wzorców.
-2. Napisz **szkic przepisania**. Sprawdź, czy czyta się naturalnie na głos, czy różnicuje długość zdań, czy stawia na konkretny szczegół i proste konstrukcje (jest / to / ma) oraz czy trzyma właściwy rejestr.
-3. Zadaj pytanie: **„Co w poniższym tekście tak ewidentnie zdradza AI?"** Odpowiedz krótko, wskazując pozostałe sygnały.
-4. Popraw do **wersji finalnej**, która je usuwa i nie zawiera długich myślników (— ani –; patrz punkt 14).
+1. Przeczytaj tekst uważnie i zidentyfikuj każde wystąpienie powyższych wzorców.
+2. Przygotuj **szkic przepisania**. Sprawdź, czy tekst czyta się naturalnie, czy różnicuje długość zdań, czy operuje na konkretnych szczegółach i prostych konstrukcjach (jest / to / ma) oraz czy zachowuje właściwy rejestr.
+3. Odpowiedz krótko na pytanie: **„Co w tym tekście wskazuje na generowanie maszynowe?"** - wskazując sygnały, które nadal są widoczne.
+4. Doprowadź do **wersji finalnej**, która te sygnały usuwa i nie zawiera długich myślników (— ani –; por. punkt 14).
 
 Dostarcz: szkic, krótkie punkty „co wciąż brzmi jak AI", wersję finalną oraz (opcjonalnie) krótkie podsumowanie zmian.
 
@@ -601,12 +601,12 @@ Dostarcz: szkic, krótkie punkty „co wciąż brzmi jak AI", wersję finalną o
 >
 > Deklaracje o produktywności trudno zweryfikować. Producent może podawać, że użytkownicy akceptują 30% podpowiedzi, ale akceptacja to nie poprawność, a poprawność to nie wartość. Bez testów po prostu zgadujesz.
 
-**Co wciąż brzmi jak AI?**
-- Rytm jest miejscami zbyt równy (czyste kontrasty, równo wyważone akapity).
-- Wymienione badania mogą wyglądać na wiarygodne, ale zmyślone, jeśli nie są prawdziwe i podane ze źródłem.
-- Zakończenie trochę zalatuje sloganem („Bez testów...") zamiast brzmieć jak człowiek.
+**Co wciąż wskazuje na tekst generowany maszynowo:**
+- Rytm jest miejscami zbyt równy (symetryczne kontrasty, równo wyważone akapity).
+- Przywołane badanie może sprawiać wrażenie wiarygodnego, lecz bez podanego źródła jest domniemaniem.
+- Zakończenie ma charakter sloganowy („Bez testów...") zamiast autentycznej konkluzji.
 
-**Teraz spraw, żeby nie brzmiało ewidentnie jak AI:**
+**Wersja finalna:**
 > Asystenty AI potrafią cię przyspieszyć w nudnych fragmentach. Nie we wszystkim. Na pewno nie w architekturze.
 >
 > Świetnie radzą sobie z szablonem: pliki konfiguracyjne, rusztowanie testów, powtarzalne refaktoryzacje. Świetnie też brzmią słusznie, gdy są w błędzie. Akceptowałem podpowiedzi, które się kompilowały, przechodziły lintera i mijały się z sensem, bo przestałem uważać.
@@ -615,7 +615,7 @@ Dostarcz: szkic, krótkie punkty „co wciąż brzmi jak AI", wersję finalną o
 >
 > Liczby o produktywności są śliskie. Producent powie, że użytkownicy akceptują 30% podpowiedzi, tylko akceptacja to nie poprawność, a poprawność to nie wartość. Bez testów zgadujesz.
 
-**Zmiany:** Usunięto ramkę rozmowy z chatbotem, nadymanie znaczenia, język promocyjny i doczepki, regułę trzech i krążenie po synonimach, paralelizm „to nie tylko... to...", zmyśloną statystykę bez źródła, mgliste „eksperci podkreślają", unikanie „jest / to", myślniki, emoji, pogrubienia, schematyczną sekcję „wyzwań", asekurację i zastrzeżenie o dacie wiedzy, wypełniacze oraz ogólnikowe optymistyczne zakończenie. Potem odbudowano głos zróżnicowanym rytmem i konkretem.
+**Wprowadzone zmiany:** Usunięto ramkę konwersacji z asystentem, nadymanie znaczenia, język promocyjny i doczepki imiesłowowe, regułę trzech i wariację synonimiczną, paralelizm przeczący „to nie tylko... to...", statystykę bez źródła, mgliste „eksperci podkreślają", zastępowanie „jest / to" rozbudowanymi konstrukcjami, myślniki, emoji, mechaniczne pogrubienia, schematyczną sekcję „wyzwań", asekurację i zastrzeżenie o dacie wiedzy, wypełniacze oraz ogólnikowe optymistyczne zakończenie. Tekst odbudowano, różnicując rytm zdań i wprowadzając konkretne obserwacje.
 
 ## Źródła
 
