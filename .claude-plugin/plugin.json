@@ -1,0 +1,12 @@
+{
+  "name": "claude-skills-pl",
+  "version": "1.0.0",
+  "description": "Polskie skille dla Claude — humanizer i styl prawniczy",
+  "author": {
+    "name": "Michał Paszkiewicz",
+    "url": "https://kancelariapaszkiewicz.pl"
+  },
+  "repository": "https://github.com/paszkiewiczmichal/claude-skills-pl",
+  "license": "MIT",
+  "keywords": ["polish", "humanizer", "legal", "prawo"]
+}
