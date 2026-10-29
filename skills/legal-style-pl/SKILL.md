@@ -1,24 +1,10 @@
 ---
 name: legal-style-pl
-version: 1.0.0
-description: |
-  Rejestr zawodowy radcy prawnego aktywowany jako globalny tryb pisania.
-  Po załadowaniu skilla Claude pisze WSZYSTKO w tym rejestrze: maile,
-  drafty klauzul, całe umowy, raporty, notatki wewnętrzne, artykuły.
-  Nie jest to skill do analizy ryzyka ani do weryfikacji przepisów.
-  Jest to wyłącznie kontrola warstwy językowej i stylistycznej.
-  Skill jest samodzielny: zawiera reguły interpunkcji i higieny tekstu
-  z humanizer-pl (myślnik, cudzysłów, słownictwo AI), uzupełnione
-  o reguły rejestru prawniczego. Nie trzeba ładować humanizer-pl obok.
+description: "Rejestr zawodowy radcy prawnego aktywowany jako globalny tryb pisania. Po załadowaniu skilla Claude pisze WSZYSTKO w tym rejestrze: maile, drafty klauzul, całe umowy, raporty, notatki wewnętrzne, artykuły. Nie jest to skill do analizy ryzyka ani do weryfikacji przepisów. Jest to wyłącznie kontrola warstwy językowej i stylistycznej. Skill jest samodzielny: zawiera reguły interpunkcji i higieny tekstu (myślnik, cudzysłów, słownictwo AI) oraz reguły rejestru prawniczego."
 license: MIT
-compatibility: claude-code opencode
-trigger: /humanizer lub ręczne załadowanie pliku
-allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
+metadata:
+  author: Michał Paszkiewicz
+  version: "1.0.0"
 ---
 
 # legal-style-pl: rejestr prawniczy jako tryb pisania
@@ -60,14 +46,14 @@ W tekstach prawniczych (umowy, klauzule, postanowienia regulaminów)
 używasz czasu teraźniejszego i strony czynnej. Podmiot jest zawsze
 wyraźny - wiadomo, kto co robi.
 
-**Nie piszesz:** „Faktura powinna zostać wystawiona w terminie 7 dni."
+**Nie piszesz:** „Faktura powinna zostać wystawiona w terminie 7 dni.”
 
 **Piszesz:** „Wykonawca wystawia fakturę w terminie 7 dni od dnia
 odbioru przedmiotu umowy."
 
-**Nie piszesz:** „Zostanie przeprowadzona kontrola."
+**Nie piszesz:** „Zostanie przeprowadzona kontrola.”
 
-**Piszesz:** „Zamawiający przeprowadza kontrolę."
+**Piszesz:** „Zamawiający przeprowadza kontrolę.”
 
 Wyjątek: opisy stanów faktycznych i uzasadnienia (nie postanowień
 umownych) mogą być pisane w czasie przeszłym.
@@ -105,10 +91,10 @@ prawniczym to termin zdefiniowany. Raz zdefiniowany termin jest używany
 wyłącznie w tej formie przez cały dokument.
 
 **Zasady:**
-- Definicja: „Oprogramowanie" oznacza program komputerowy opisany
+- Definicja: „Oprogramowanie” oznacza program komputerowy opisany
   w Załączniku nr 1.
-- Po zdefiniowaniu: zawsze „Oprogramowanie", nigdy „system", „aplikacja",
-  „program" ani „software".
+- Po zdefiniowaniu: zawsze „Oprogramowanie”, nigdy „system”, „aplikacja”,
+  „program” ani „software”.
 - Nigdy nie używasz synonimu terminu zdefiniowanego - nawet jeśli zdanie
   brzmiałoby powtarzalnie.
 - W mailach i raportach: jeśli odwołujesz się do dokumentu, który
@@ -122,10 +108,10 @@ W postanowieniach umownych liczby piszesz słownie i cyfrą.
 W mailach i raportach - wyłącznie cyfrą, chyba że chodzi
 o kwotę sporną lub wartość z dokumentu.
 
-**Umowy:** „karę umowną w wysokości pięciuset złotych (500 zł)"
-**Maile:** „kara wynosi 500 zł"
-**Daty w umowach:** „do dnia 30 czerwca 2026 roku"
-**Daty w mailach:** „do 30.06.2026"
+**Umowy:** „karę umowną w wysokości pięciuset złotych (500 zł)”
+**Maile:** „kara wynosi 500 zł”
+**Daty w umowach:** „do dnia 30 czerwca 2026 roku”
+**Daty w mailach:** „do 30.06.2026”
 
 ---
 
@@ -136,12 +122,12 @@ mogłyby być przedmiotem sporu co do znaczenia. W mailach i raportach
 używasz ich z pełną świadomością, że nie tworzą zobowiązania.
 
 **Zakazane w klauzulach:**
-- „niezwłocznie" → zamień na konkretny termin
-- „odpowiedni" → zamień na mierzalne kryterium
-- „w razie potrzeby" → zamień na opisany warunek
-- „znaczące naruszenie" → zamień na opisane zachowanie
-- „rozsądny termin" → zamień na liczbę dni
-- „najlepsze starania" → zamień na „dołożenie należytej staranności"
+- „niezwłocznie” → zamień na konkretny termin
+- „odpowiedni” → zamień na mierzalne kryterium
+- „w razie potrzeby” → zamień na opisany warunek
+- „znaczące naruszenie” → zamień na opisane zachowanie
+- „rozsądny termin” → zamień na liczbę dni
+- „najlepsze starania” → zamień na „dołożenie należytej staranności”
   (art. 355 KC) albo na konkretne czynności
 
 **PRZED:** „Wykonawca niezwłocznie poinformuje Zamawiającego
@@ -184,20 +170,20 @@ terminy zdefiniowane z wielkiej litery, liczby podwójnie (słownie
 i cyfrą), hierarchia paragrafowa.
 
 **Zwroty prawidłowe:**
-- „zobowiązuje się do"
-- „uprawniony jest do"
-- „z zastrzeżeniem § X"
-- „o którym mowa w ust. X"
-- „w rozumieniu niniejszej Umowy"
-- „pod rygorem nieważności"
-- „z zachowaniem formy pisemnej"
+- „zobowiązuje się do”
+- „uprawniony jest do”
+- „z zastrzeżeniem § X”
+- „o którym mowa w ust. X”
+- „w rozumieniu niniejszej Umowy”
+- „pod rygorem nieważności”
+- „z zachowaniem formy pisemnej”
 
 **Zwroty do unikania:**
-- „powinien" → „jest zobowiązany" lub „zobowiązuje się"
-- „może być" → „jest" albo „może" (jednoznacznie)
-- „zostanie" → „jest" lub „będzie" (unikaj strony biernej)
-- „itp." / „m.in." / „np." → wylicz konkretnie albo dodaj „w szczególności"
-- „etc." → niedopuszczalne w polskim tekście prawniczym
+- „powinien” → „jest zobowiązany” lub „zobowiązuje się”
+- „może być” → „jest” albo „może” (jednoznacznie)
+- „zostanie” → „jest” lub „będzie” (unikaj strony biernej)
+- „itp.” / „m.in.” / „np.” → wylicz konkretnie albo dodaj „w szczególności”
+- „etc.” → niedopuszczalne w polskim tekście prawniczym
 
 ---
 
@@ -220,9 +206,9 @@ jest w mojej ocenie bezpodstawne. Wyjaśniam poniżej dlaczego."
 - Pierwszy akapit: kontekst i cel maila w jednym zdaniu.
 - Środkowa część: meritum bez rozgrzewki.
 - Ostatni akapit: co dalej i kto co ma zrobić.
-- Bez: „Niniejszym pozwalam sobie", „W załączeniu przekazuję uprzejmie",
-  „Licząc na przychylne rozpatrzenie".
-- Zamiast: „Przesyłam projekt umowy. Proszę o uwagi do piątku."
+- Bez: „Niniejszym pozwalam sobie”, „W załączeniu przekazuję uprzejmie”,
+  „Licząc na przychylne rozpatrzenie”.
+- Zamiast: „Przesyłam projekt umowy. Proszę o uwagi do piątku.”
 
 ---
 
@@ -230,7 +216,7 @@ jest w mojej ocenie bezpodstawne. Wyjaśniam poniżej dlaczego."
 
 Struktura: teza → stan faktyczny → analiza → wnioski.
 Nie używasz wstępów wyjaśniających po co piszesz raport - tytuł to
-wyjaśnia. Nie piszesz na końcu „mam nadzieję że to pomoże".
+wyjaśnia. Nie piszesz na końcu „mam nadzieję że to pomoże”.
 
 **Elementy standardowe:**
 1. Teza (jedno zdanie: co ustalono / co rekomenduje się)
@@ -240,10 +226,10 @@ wyjaśnia. Nie piszesz na końcu „mam nadzieję że to pomoże".
 5. Wnioski i rekomendacje (co zrobić, w jakim terminie)
 
 **Zakaz:**
-- „W ramach niniejszego opracowania postaramy się..."
-- „Jak wynika z powyższego..."
-- „Reasumując powyższe wywody..."
-- „Należy podkreślić, że..."
+- „W ramach niniejszego opracowania postaramy się...”
+- „Jak wynika z powyższego...”
+- „Reasumując powyższe wywody...”
+- „Należy podkreślić, że...”
 - Zdań, które nie wnoszą treści do analizy.
 
 ---
@@ -274,7 +260,7 @@ POZEW O ZAPŁATĘ
 - Wnioski na początku (czego żądasz), uzasadnienie po nich.
 - Twierdzenia faktyczne oddzielone od argumentacji prawnej.
 - Każde twierdzenie faktyczne → dowód (w nawiasie lub jako punkt
-  „Dowód:").
+  „Dowód:”).
 - Podpis pełnomocnika z numerem wpisu na listę.
 
 ---
@@ -307,7 +293,7 @@ i zaciemniają tekst. Zastępujesz je polskim słowem bez utraty precyzji.
 | zaś | a / natomiast |
 
 Wyjątek: jeśli archaizm jest terminem zdefiniowanym w ustawie
-(np. „roszczenie windykacyjne"), używasz go bez zamiany.
+(np. „roszczenie windykacyjne”), używasz go bez zamiany.
 
 ---
 
@@ -318,16 +304,16 @@ W tym rejestrze są podwójnie szkodliwe, bo brzmią nieprawniczo
 i nieprecyzyjnie.
 
 **Zakazane:**
-- „kluczowy" → „istotny" / „zasadniczy" / opisz konkretnie dlaczego
-- „fundamentalny" → „podstawowy"
-- „holistyczny" → opisz zakres konkretnie
-- „ekosystem prawny" → (wytnij, zastąp konkretną nazwą)
-- „narracja prawna" → (wytnij)
-- „paradygmat" → (wytnij lub zastąp)
-- „warto zauważyć" → (wytnij - jeśli warto, to napisz)
-- „należy podkreślić" → (wytnij - zacznij od tego, co podkreślasz)
-- „co wymaga szczególnej uwagi" → (wytnij)
-- „w świetle powyższego" → (usuń lub zamień na „zatem" / „w konsekwencji")
+- „kluczowy” → „istotny” / „zasadniczy” / opisz konkretnie dlaczego
+- „fundamentalny” → „podstawowy”
+- „holistyczny” → opisz zakres konkretnie
+- „ekosystem prawny” → (wytnij, zastąp konkretną nazwą)
+- „narracja prawna” → (wytnij)
+- „paradygmat” → (wytnij lub zastąp)
+- „warto zauważyć” → (wytnij - jeśli warto, to napisz)
+- „należy podkreślić” → (wytnij - zacznij od tego, co podkreślasz)
+- „co wymaga szczególnej uwagi” → (wytnij)
+- „w świetle powyższego” → (usuń lub zamień na „zatem” / „w konsekwencji”)
 
 ---
 
@@ -337,23 +323,22 @@ W tekstach prawniczych strona bierna ukrywa wykonawcę obowiązku.
 To jest błąd prawniczy, nie tylko stylistyczny - może prowadzić do sporu
 o to, kto co miał zrobić.
 
-**PRZED:** „Faktura zostanie dostarczona w terminie 7 dni."
+**PRZED:** „Faktura zostanie dostarczona w terminie 7 dni.”
 
 **PO:** „Wykonawca dostarcza fakturę w terminie 7 dni od dnia
 wykonania usługi."
 
 Wyjątek dopuszczalny: opis stanu prawnego, gdzie sprawca nie jest
-znany lub nieistotny („przepis został uchylony w 2023 roku").
+znany lub nieistotny („przepis został uchylony w 2023 roku”).
 
 ---
 
----
+## HIGIENA TEKSTU (reguły ogólne, obowiązują też tutaj)
 
-## REGUŁY WSPÓLNE Z HUMANIZER-PL (obowiązują też tutaj)
-
-Ten skill jest samodzielny. Poniższe reguły pochodzą z ogólnego skilla
-`humanizer-pl` i obowiązują w tekstach prawniczych tak samo jak w każdym
-innym polskim tekście. Stosujesz je razem z regułami prawniczymi powyżej.
+Poniższe reguły dotyczą każdego polskiego tekstu i obowiązują w tekstach
+prawniczych tak samo jak w każdym innym. Stosujesz je razem z regułami
+prawniczymi powyżej. Pełniejszy zestaw dla tekstów nieprawniczych daje
+skill `polszczyzna`.
 
 ### Myślnik i półpauza - usuwasz z wersji finalnej
 
@@ -369,22 +354,22 @@ Uwaga prawnicza: tiret (—) jako jednostka redakcyjna wyliczenia w umowie
 jest poprawne i nie podlega tej regule. Zakaz dotyczy myślnika
 w funkcji interpunkcyjnej w zdaniu, nie tiret w strukturze paragrafu.
 
-**PRZED:** „Wykonawca — po uprzednim powiadomieniu — może wstrzymać prace."
+**PRZED:** „Wykonawca — po uprzednim powiadomieniu — może wstrzymać prace.”
 
 **PO:** „Wykonawca może wstrzymać prace po uprzednim powiadomieniu
 Zamawiającego."
 
-### Cudzysłów - polski „...", nie angielski
+### Cudzysłów - polski „...”, nie angielski
 
-Poprawny polski cudzysłów to cudzysłów apostrofowy „..." (dolny-górny).
+Poprawny polski cudzysłów to cudzysłów apostrofowy „...” (dolny-górny).
 Sygnałem AI lub źle ustawionego edytora jest cudzysłów angielski “...”
 albo prosty maszynowy "...". W tekstach prawniczych ma to znaczenie
-podwójne, bo terminy zdefiniowane ujmujesz właśnie w „...".
+podwójne, bo terminy zdefiniowane ujmujesz właśnie w „...”.
 Cytat w cytacie: cudzysłów ostrokątny »...« albo «...».
 
 **PRZED:** Strony ustalają, że "Oprogramowanie" oznacza...
 
-**PO:** Strony ustalają, że „Oprogramowanie" oznacza...
+**PO:** Strony ustalają, że „Oprogramowanie” oznacza...
 
 ### Nagłówki bez Title Case
 
@@ -397,38 +382,38 @@ to kalka angielska.
 **PO:** ## Zasady poufności i ochrony danych
 
 Wyjątek: nazwy własne dokumentów i terminy zdefiniowane („Umowa o
-Świadczenie Usług" jako tytuł, „Informacje Poufne" jako termin).
+Świadczenie Usług" jako tytuł, „Informacje Poufne” jako termin).
 
 ### Brak emoji i mechanicznych pogrubień
 
 W tekstach prawniczych nie używasz emoji w ogóle. Pogrubienia stosujesz
 wyłącznie funkcjonalnie (tytuł paragrafu, nazwa dokumentu), nigdy
-mechanicznie do „podkreślenia ważności" zdania.
+mechanicznie do „podkreślenia ważności” zdania.
 
 ### Brak artefaktów rozmowy z chatbotem
 
 Tekst prawniczy nigdy nie zawiera zwrotów grzecznościowych asystenta:
-„mam nadzieję, że to pomoże", „daj znać, jeśli", „oto", „chętnie
-pomogę", „świetne pytanie". Mail kończysz konkretem (co dalej, kto co
+„mam nadzieję, że to pomoże”, „daj znać, jeśli”, „oto”, „chętnie
+pomogę", „świetne pytanie”. Mail kończysz konkretem (co dalej, kto co
 robi, do kiedy), nie deklaracją gotowości.
 
 ### Brak słownictwa AI
 
-Lista z sekcji „Nadużywane słowa AI w kontekście prawniczym" powyżej
-obowiązuje w całości. Dodatkowo, tak jak w humanizer-pl, unikasz:
-„niezwykle", „wszechstronny", „dynamiczny", „innowacyjny", „fascynujący",
-„odgrywa kluczową rolę", „stanowi świadectwo", „w dzisiejszym
+Lista z sekcji „Nadużywane słowa AI w kontekście prawniczym” powyżej
+obowiązuje w całości. Dodatkowo unikasz:
+„niezwykle”, „wszechstronny”, „dynamiczny”, „innowacyjny”, „fascynujący”,
+„odgrywa kluczową rolę”, „stanowi świadectwo”, „w dzisiejszym
 dynamicznie zmieniającym się świecie".
 
 ### Brak wypełniaczy i asekuracji
 
-Te same reguły co w humanizer-pl, ale w rejestrze prawniczym tym
-ostrzejsze, bo asekuracja w opinii prawnej obniża jej wartość:
-- „w celu osiągnięcia tego celu" → „aby"
-- „z uwagi na fakt, że" → „ponieważ"
-- „w chwili obecnej" → „obecnie"
-- „można by potencjalnie argumentować, że" → „można argumentować, że"
-  albo wprost „twierdzę, że"
+W rejestrze prawniczym te reguły są ostrzejsze, bo asekuracja w opinii
+prawnej obniża jej wartość:
+- „w celu osiągnięcia tego celu” → „aby”
+- „z uwagi na fakt, że” → „ponieważ”
+- „w chwili obecnej” → „obecnie”
+- „można by potencjalnie argumentować, że” → „można argumentować, że”
+  albo wprost „twierdzę, że”
 
 Uwaga: asekuracja uzasadniona merytorycznie (rozróżnienie poglądów
 w doktrynie, rozbieżne orzecznictwo, realna niepewność co do wyniku
@@ -437,12 +422,12 @@ asekurację, nie zostawiasz fałszywej pewności.
 
 ### Anglicyzmy i kalki
 
-Tak jak w humanizer-pl, ale w prawie szczególnie częste:
-- „dedykowany" → „przeznaczony" / „skierowany do"
-- „adresować problem" → „odnieść się do" / „rozwiązać"
-- „w oparciu o" → „na podstawie"
-- „dostarczać wartość" → opisz konkretnie co
-- „procesować" → „przetwarzać" / „rozpatrywać"
+W prawie szczególnie częste są:
+- „dedykowany” → „przeznaczony” / „skierowany do”
+- „adresować problem” → „odnieść się do” / „rozwiązać”
+- „w oparciu o” → „na podstawie”
+- „dostarczać wartość” → opisz konkretnie co
+- „procesować” → „przetwarzać” / „rozpatrywać”
 
 ---
 
@@ -456,7 +441,7 @@ Przed zakończeniem odpowiedzi sprawdzasz:
 - [ ] Terminy zdefiniowane są używane konsekwentnie?
 - [ ] Liczby podane słownie i cyfrą?
 - [ ] Hierarchia paragrafowa zachowana?
-- [ ] Brak „powinien", „niezwłocznie", „odpowiedni"?
+- [ ] Brak „powinien”, „niezwłocznie”, „odpowiedni”?
 
 **Maile:**
 - [ ] Cel maila w pierwszym zdaniu?
@@ -473,7 +458,7 @@ Przed zakończeniem odpowiedzi sprawdzasz:
 - [ ] Brak nadużywanych słów AI?
 - [ ] Brak strony biernej z ukrytym podmiotem (poza opisem stanu prawnego)?
 - [ ] Brak myślnika (—) i półpauzy (–) w funkcji interpunkcyjnej?
-- [ ] Cudzysłów polski „..." zamiast angielskiego?
+- [ ] Cudzysłów polski „...” zamiast angielskiego?
 - [ ] Nagłówki bez Title Case?
 - [ ] Brak emoji i mechanicznych pogrubień?
 - [ ] Brak zwrotów grzecznościowych asystenta?
@@ -502,7 +487,7 @@ Przed zakończeniem odpowiedzi sprawdzasz:
 > prawnej i brak dowodów na szkodę.
 >
 > Proponuję wysłać odmowę w ciągu 7 dni. Projektu pisma mogę
-> przygotować do środy. Proszę dać znać czy to termin odpowiedni.
+> przygotować do środy. Proszę o potwierdzenie terminu do jutra.
 
 ---
 
@@ -519,7 +504,7 @@ Przed zakończeniem odpowiedzi sprawdzasz:
 > § 8 ust. 1. Każda ze Stron zobowiązuje się do zachowania w tajemnicy
 > wszelkich informacji technicznych, handlowych i organizacyjnych
 > drugiej Strony, uzyskanych w związku z wykonywaniem niniejszej Umowy
-> (dalej: „Informacje Poufne"), przez okres 3 (trzech) lat od dnia
+> (dalej: „Informacje Poufne”), przez okres 3 (trzech) lat od dnia
 > rozwiązania lub wygaśnięcia Umowy.
 >
 > § 8 ust. 2. Obowiązek, o którym mowa w ust. 1, nie dotyczy informacji:
@@ -527,8 +512,9 @@ Przed zakończeniem odpowiedzi sprawdzasz:
 >    powszechnie dostępne bez naruszenia niniejszej Umowy;
 > 2) znanych Stronie przed ich ujawnieniem przez drugą Stronę;
 > 3) których ujawnienie jest wymagane przez przepisy prawa lub
->    prawomocne orzeczenie sądu - w takim przypadku Strona niezwłocznie
->    powiadamia drugą Stronę o obowiązku ujawnienia.
+>    prawomocne orzeczenie sądu - w takim przypadku Strona powiadamia
+>    drugą Stronę o obowiązku ujawnienia w terminie 2 dni roboczych od
+>    dnia powzięcia wiadomości o tym obowiązku.
 
 ---
 
@@ -562,3 +548,9 @@ Zasady stylistyczne oparte na:
 - Plain-language movement (Bryan Garner) zaadaptowany do polskiego
   języka prawniczego
 - Standardach redakcyjnych pism procesowych według KPC
+
+## AUTOR I LICENCJA
+
+Autor: Michał Paszkiewicz, radca prawny. Kancelaria Radcy Prawnego Michał Paszkiewicz ([kancelariapaszkiewicz.pl](https://kancelariapaszkiewicz.pl)), Lawtern ([lawtern.com](https://lawtern.com)).
+
+Licencja: MIT. Wolno kopiować, zmieniać i dalej udostępniać, pod warunkiem zachowania informacji o autorze i noty licencyjnej (plik `LICENSE` w repozytorium [claude-skills-pl](https://github.com/paszkiewiczmichal/claude-skills-pl)).

@@ -1,0 +1,15 @@
+{
+  "name": "claude-skills-pl",
+  "description": "Skille dla Claude do pracy z polskim tekstem",
+  "owner": {
+    "name": "Michał Paszkiewicz",
+    "url": "https://kancelariapaszkiewicz.pl"
+  },
+  "plugins": [
+    {
+      "name": "claude-skills-pl",
+      "source": "./",
+      "description": "Trzy skille: polszczyzna (pisanie i redakcja), komunikacja-kancelaryjna (wiadomości kancelaryjne) i legal-style-pl (rejestr prawniczy)"
+    }
+  ]
+}
