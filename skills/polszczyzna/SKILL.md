@@ -115,7 +115,6 @@ Dostarcz: wersję finalną oraz (opcjonalnie, jeśli tekst przeszedł istotną r
 
 ## Źródła
 
-- **Skill humanizer** ([blader/humanizer](https://github.com/blader/humanizer), licencja MIT, Copyright (c) 2025 Siqi Chen), zbudowany na stronie Wikipedii „Signs of AI writing” (WikiProject AI Cleanup). `references/WZORCE_AI.md` jest jego polską adaptacją i rozszerzeniem o wzorce typowe dla polszczyzny. Pełna nota: plik `NOTICE` w repozytorium.
 - **Poradnia Językowa PWN** (sjp.pwn.pl/poradnia) - hasła o myślniku, półpauzie i łączniku, o cudzysłowach pierwszego i drugiego stopnia oraz o statusie spójnika „bo”.
 - **Wielki słownik ortograficzny PWN** (red. E. Polański) oraz **Nowy słownik poprawnej polszczyzny PWN** (red. A. Markowski) - zasady interpunkcji i pisowni.
 - **Rada Języka Polskiego** - rozstrzygnięcia dotyczące rodzajów kresek (pauza, półpauza, dywiz).

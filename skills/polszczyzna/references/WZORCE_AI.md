@@ -2,8 +2,6 @@
 
 Numeracja punktów odpowiada odesłaniom w `SKILL.md` i `WARSZTAT.md`.
 
-Katalog jest polską adaptacją i rozszerzeniem listy wzorców ze skilla humanizer ([blader/humanizer](https://github.com/blader/humanizer), licencja MIT, Copyright (c) 2025 Siqi Chen), opartej na stronie Wikipedii „Signs of AI writing” (WikiProject AI Cleanup). Pełna nota: plik `NOTICE` w repozytorium claude-skills-pl.
-
 ## WZORCE TREŚCI
 
 ### 1. Nadmierne podkreślanie znaczenia, dziedzictwa i „szerszych trendów”

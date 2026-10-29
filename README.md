@@ -120,7 +120,6 @@ claude-skills-pl/
 │   └── legal-style-pl/
 │       └── SKILL.md
 ├── LICENSE
-├── NOTICE
 └── README.md
 ```
 
@@ -135,8 +134,7 @@ claude-skills-pl/
 - Poradnia Językowa PWN, Wielki słownik ortograficzny PWN, Nowy słownik poprawnej polszczyzny PWN, rozstrzygnięcia Rady Języka Polskiego.
 - Kodeks Etyki Radcy Prawnego (tekst jednolity, uchwała nr 884/XI/2023 Prezydium KRRP) i ustawa z 6 lipca 1982 r. o radcach prawnych.
 - Rozporządzenie Prezesa Rady Ministrów z 20 czerwca 2002 r. w sprawie Zasad Techniki Prawodawczej.
-- Katalog wzorców AI w `polszczyzna` jest polską adaptacją listy wzorców ze skilla [humanizer](https://github.com/blader/humanizer) (Siqi Chen, MIT), opartej na stronie Wikipedii „Signs of AI writing” (WikiProject AI Cleanup). Pełna nota: [`NOTICE`](NOTICE).
 
 ## Licencja
 
-[MIT](LICENSE), Copyright (c) 2026 Michał Paszkiewicz. Noty dla materiału pochodnego: [`NOTICE`](NOTICE).
+[MIT](LICENSE), Copyright (c) 2026 Michał Paszkiewicz.
