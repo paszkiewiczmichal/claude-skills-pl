@@ -1,80 +1,79 @@
 # claude-skills-pl
 
-Trzy skille dla Claude do pracy z polskim tekstem: codziennym, kancelaryjnym i prawniczym. Każdy działa samodzielnie i ma osobny zakres, więc nie dublują się ani sobie nie przeszkadzają.
+Claude pisze po polsku poprawnie, ale po kilku zdaniach widać, że to tekst z modelu: „odgrywa kluczową rolę”, trzy przymiotniki z rzędu, długi myślnik przeniesiony z angielskiego, „daj znać, jeśli…” na końcu maila. Klient to zauważa. Sędzia też.
 
-Autor: [Michał Paszkiewicz](https://kancelariapaszkiewicz.pl), radca prawny.
+Napisałem te trzy skille do własnej pracy w kancelarii. Uczą Claude pisać tak, jak pisze uważny polski autor, a przy umowach, pismach i korespondencji z klientem tak, jak pisze radca prawny.
 
-## Skille
+Michał Paszkiewicz, radca prawny, [kancelariapaszkiewicz.pl](https://kancelariapaszkiewicz.pl)
 
-| Skill | Co robi | Do czego |
+| Skill | Co robi | Do jakich tekstów |
 | --- | --- | --- |
-| [`polszczyzna`](skills/polszczyzna) | Buduje poprawne polskie zdania i usuwa znamiona tekstu generowanego przez AI | posty, artykuły, oferty, opisy usług, notatki |
-| [`komunikacja-kancelaryjna`](skills/komunikacja-kancelaryjna) | Dobiera ton i szkielet wiadomości do adresata, pilnuje tajemnicy zawodowej | maile do klienta, do zespołu, do sądu, urzędu i strony przeciwnej |
-| [`legal-style-pl`](skills/legal-style-pl) | Narzuca rejestr prawniczy: precyzję, terminy zdefiniowane, technikę prawodawczą | umowy, klauzule, regulaminy, pisma procesowe, opinie, raporty |
+| [`polszczyzna`](skills/polszczyzna) | Buduje naturalne polskie zdania i usuwa znamiona tekstu generowanego przez AI | posty, artykuły, oferty, opisy usług, notatki |
+| [`komunikacja-kancelaryjna`](skills/komunikacja-kancelaryjna) | Dobiera ton i układ wiadomości do adresata, pilnuje tajemnicy zawodowej | maile do klienta, zespołu, sądu, urzędu i strony przeciwnej |
+| [`legal-style-pl`](skills/legal-style-pl) | Pisze rejestrem prawniczym: precyzyjnie, z terminami zdefiniowanymi, według techniki prawodawczej | umowy, klauzule, regulaminy, pisma procesowe, opinie |
 
-Skille pilnują warstwy językowej. Nie weryfikują przepisów, nie analizują ryzyka i nie zastępują oceny prawnika.
+Skille pilnują języka. Nie sprawdzają przepisów, nie oceniają ryzyka i nie zastępują prawnika.
 
-## polszczyzna
+## Jak skill polszczyzna poprawia tekst?
 
-Dobry polski tekst to nie tylko brak błędów. To także brak odruchów, po których czytelnik poznaje, że pisała maszyna: napuszonego podkreślania wagi, reguły trzech, doczepek w rodzaju „co podkreśla”, długich myślników żywcem z angielskiego i pożegnań typu „daj znać, jeśli”.
+Poprawność to za mało. Tekst ma też nie zdradzać, że pisała go maszyna. Skill pracuje na dwóch poziomach.
 
-Skill ma dwie warstwy:
+**Warsztat** ([`WARSZTAT.md`](skills/polszczyzna/references/WARSZTAT.md)) to zasady budowania dobrego polskiego zdania: spójniki, rejestr, rzeczowniki odczasownikowe, strona bierna, szyk, interpunkcja, konsekwencja w terminologii. Przy każdej regule zaznaczam, czy to norma językowa, czy decyzja redakcyjna, żeby nie mylić preferencji z błędem.
 
-- **Warsztat** ([`WARSZTAT.md`](skills/polszczyzna/references/WARSZTAT.md)). Jak zbudować dobre polskie zdanie: spójniki przyczynowe, rejestr, rzeczowniki odczasownikowe, strona bierna, szyk, interpunkcja zdania złożonego, konsekwencja terminologiczna. Każda reguła jest oznaczona jako norma albo decyzja redakcyjna, żeby preferencji nie mylić z poprawnością.
-- **Katalog wzorców AI** ([`WZORCE_AI.md`](skills/polszczyzna/references/WZORCE_AI.md)). 33 wzorce z przykładami przed i po, wskazówki, czego nie brać za fałszywy alarm, oraz lista oznak ludzkiego pisania, których nie wolno „naprawiać”.
+**Katalog wzorców AI** ([`WZORCE_AI.md`](skills/polszczyzna/references/WZORCE_AI.md)) opisuje 33 nawyki tekstu z modelu, każdy z przykładem przed i po. Jest też lista cech ludzkiego pisania, których skill nie ma prawa „poprawiać”.
 
-Skill zna też własne granice. W tekstach prawniczych wyłącza reguły, które by je psuły (stronę bierną w opisie stanu prawnego, powtarzanie terminów zdefiniowanych, rozbudowane zdania warunkowe), i odsyła do `legal-style-pl`. Opcjonalnie kalibruje głos do próbki Twojego własnego pisania.
-
-> **Źle:** Wprowadzenie obowiązku oznaczania treści nastąpi z dniem 2 sierpnia, a dokonanie weryfikacji materiałów leży po stronie przedsiębiorcy.
+> **Przed:** W dzisiejszym dynamicznie zmieniającym się świecie sztuczna inteligencja stanowi przełomowe narzędzie, które odgrywa kluczową rolę w transformacji sposobu, w jaki tworzymy treści.
 >
-> **Dobrze:** Od 2 sierpnia trzeba oznaczać treści, a weryfikuje je przedsiębiorca.
+> **Po:** Asystenty AI przyspieszają pisanie tekstów szablonowych. Gorzej radzą sobie z oceną, kiedy się mylą.
 
-## komunikacja-kancelaryjna
+Skill zna swoje granice. Przy tekście prawniczym wyłącza reguły, które by go zepsuły, na przykład zakaz powtórzeń, bo w umowie termin zdefiniowany powtarza się celowo. Może też dopasować styl do próbki twojego własnego pisania.
 
-Korespondencja kancelaryjna to trzy różne rejestry: klient, współpracownik, sąd lub urząd. Skill rozpoznaje adresata, typ sprawy i pilność wiadomości, dobiera szkielet i ton, a gotowy draft przepuszcza przez listę kontrolną przed wysłaniem.
+## Jak komunikacja-kancelaryjna pisze do klienta, sądu i zespołu?
 
-- **Klient.** Cztery typy: instytucjonalny, wierzyciel w upadłości lub restrukturyzacji, osoba fizyczna, konsument. Każdy dostaje inny język i inny stopień formalności.
-- **Zgodność z Kodeksem Etyki Radcy Prawnego.** Wiadomość informuje o skutkach czynności, a nie tylko o samym fakcie (art. 44 ust. 1). Prośba o zgodę wyjaśnia skutki, zagrożenia i alternatywy (art. 5 pkt 9).
-- **Pilność.** Skill wyłapuje sygnały niepokoju w wiadomości przychodzącej i każe odpowiedzieć na nie w pierwszym zdaniu.
-- **Tajemnica zawodowa.** Przed wysłaniem sprawdza adresatów, kopie i historię cytowań przy przekazywaniu wątku.
-- **Draft do akceptacji.** Skill nie jest autopilotem i niczego nie wysyła bez pokazania treści.
+Mail do klienta, notatka dla współpracownika i pismo do urzędu wymagają trzech różnych rejestrów. Skill rozpoznaje adresata, rodzaj sprawy i pilność, dobiera układ i ton, a przed oddaniem szkicu przechodzi listę kontrolną.
 
-> „Proszę o sprawdzenie klauzuli kary umownej w załączonym projekcie. Potrzebuję tego do jutra rana, klient czeka na odpowiedź.”
+- **Cztery typy klienta:** instytucjonalny, wierzyciel w upadłości lub restrukturyzacji, osoba fizyczna i konsument. Każdy dostaje inny poziom formalności.
+- **Kodeks Etyki Radcy Prawnego:** wiadomość mówi o skutkach czynności, a nie tylko o tym, że ją wykonano (art. 44 ust. 1). Prośba o zgodę wyjaśnia skutki, zagrożenia i inne możliwości (art. 5 pkt 9).
+- **Pilność:** skill wychwytuje niepokój w wiadomości od klienta i odpowiada na niego w pierwszym zdaniu.
+- **Tajemnica zawodowa:** przed wysłaniem sprawdza adresatów, kopie i cytowaną historię wątku.
+- **Tylko szkic:** skill niczego nie wysyła sam. Najpierw pokazuje treść do akceptacji.
+
+> **Przed:** Szanowny Panie, w nawiązaniu do naszej rozmowy uprzejmie informuję, że pozew został złożony. Daj znać, jeśli masz pytania!
 >
-> Wiadomość do współpracownika: priorytet i termin podane wprost, bez rozgrzewki.
+> **Po:** Szanowny Panie, wczoraj złożyłem pozew. Sąd doręczy go pozwanemu i wyznaczy mu termin na odpowiedź. O terminie rozprawy napiszę, gdy tylko sąd go wyznaczy.
 
-Skill nie służy do pism procesowych jako dokumentów formalnych ani do merytorycznej treści opinii prawnej. Od tego jest `legal-style-pl`.
+Pisma procesowe i treść merytoryczną opinii zostawia skillowi `legal-style-pl`.
 
-## legal-style-pl
+## Jak legal-style-pl redaguje umowy i pisma procesowe?
 
-W umowie język ma być jednoznaczny, a nie ładny. Skill włącza rejestr zawodowy radcy prawnego jako tryb pisania i pilnuje, żeby postanowienie tworzyło obowiązek, a nie tylko wyrażało intencję.
+W umowie język ma być jednoznaczny, a nie ładny. Skill włącza rejestr radcy prawnego i pilnuje, żeby postanowienie tworzyło obowiązek, zamiast wyrażać dobre chęci.
 
-- Czas teraźniejszy, strona czynna, wyraźny podmiot.
-- Jedna myśl w jednym przepisie.
-- Terminy zdefiniowane używane konsekwentnie, bez synonimów.
-- Liczby i daty zapisane zgodnie z konwencją dla danego typu dokumentu.
-- Zakaz sformułowań nieokreślonych („niezwłocznie”, „odpowiedni”, „rozsądny termin”) wraz z gotowymi zamiennikami.
-- Hierarchia redakcyjna według Zasad Techniki Prawodawczej: `§`, `ust.`, `pkt`, `lit.`.
-- Wzorce dla umów, maili do klientów, raportów i opinii oraz pism procesowych.
-- Lista archaizmów kancelaryjnych i słów typowych dla AI do wycięcia.
+- czas teraźniejszy, strona czynna, wskazany podmiot obowiązku,
+- jedna myśl w jednym przepisie,
+- terminy zdefiniowane używane konsekwentnie, bez synonimów,
+- liczby i daty zapisane według konwencji danego dokumentu,
+- zakaz sformułowań nieostrych („niezwłocznie”, „odpowiedni”, „rozsądny termin”) wraz z gotowymi zamiennikami,
+- jednostki redakcyjne według Zasad Techniki Prawodawczej: `§`, `ust.`, `pkt`, `lit.`,
+- wzorce dla umów, maili do klientów, raportów, opinii i pism procesowych,
+- lista archaizmów kancelaryjnych i słów typowych dla AI do usunięcia.
 
-> **Źle:** Strony powinny dążyć do polubownego rozwiązania sporów, co pozwoli uniknąć niepotrzebnych kosztów.
+> **Przed:** Strony powinny dążyć do polubownego rozwiązania sporów, co pozwoli uniknąć niepotrzebnych kosztów.
 >
-> **Dobrze:** Strony zobowiązują się do podjęcia negocjacji w terminie 14 dni od dnia doręczenia pisemnego wezwania, przed skierowaniem sprawy na drogę sądową.
+> **Po:** Strony zobowiązują się do podjęcia negocjacji w terminie 14 dni od dnia doręczenia pisemnego wezwania, przed skierowaniem sprawy na drogę sądową.
 
-Pierwsza wersja wyraża intencję. Druga tworzy obowiązek.
+Pierwsza wersja wyraża intencję. Druga tworzy obowiązek, którego wykonanie da się sprawdzić.
 
-## Który skill wybrać
+## Który skill wybrać do danego tekstu?
 
-| Piszesz | Skill |
+| Tekst | Skill |
 | --- | --- |
-| post, artykuł, ofertę, opis usługi, notatkę | `polszczyzna` |
+| post, artykuł, oferta, opis usługi, notatka | `polszczyzna` |
 | mail do klienta, współpracownika, sądu, urzędu | `komunikacja-kancelaryjna` |
-| umowę, klauzulę, regulamin, pismo procesowe, opinię | `legal-style-pl` |
+| umowa, klauzula, regulamin, pismo procesowe, opinia | `legal-style-pl` |
 
-Gdy tekst przecina kategorie, skille się uzupełniają. `polszczyzna` sama odsyła do pozostałych dwóch, gdy rozpozna rejestr prawniczy albo korespondencję kancelaryjną.
+Skille się uzupełniają. Gdy `polszczyzna` rozpozna tekst prawniczy albo korespondencję kancelaryjną, sama odsyła do właściwego skilla.
 
-## Instalacja
+## Jak zainstalować skille w Claude Code i Claude.ai?
 
 **Claude Code, jako plugin** (wszystkie trzy skille naraz):
 
@@ -83,9 +82,9 @@ claude plugin marketplace add paszkiewiczmichal/claude-skills-pl
 claude plugin install claude-skills-pl@claude-skills-pl
 ```
 
-To samo w sesji: `/plugin marketplace add paszkiewiczmichal/claude-skills-pl`, potem `/plugin install claude-skills-pl@claude-skills-pl`. Skille pojawiają się z prefiksem pluginu, na przykład `/claude-skills-pl:polszczyzna`.
+W sesji Claude Code to samo robią `/plugin marketplace add paszkiewiczmichal/claude-skills-pl` i `/plugin install claude-skills-pl@claude-skills-pl`. Skille mają wtedy prefiks pluginu, na przykład `/claude-skills-pl:polszczyzna`.
 
-**Claude Code, ręcznie** (jeden skill albo wybrane):
+**Claude Code, ręcznie** (wybrany skill):
 
 ```bash
 git clone https://github.com/paszkiewiczmichal/claude-skills-pl.git
@@ -93,47 +92,34 @@ mkdir -p ~/.claude/skills
 cp -r claude-skills-pl/skills/polszczyzna ~/.claude/skills/
 ```
 
-Kopiuj cały folder skilla, nie sam plik `SKILL.md`: `polszczyzna` ma jeszcze podfolder `references`.
+Kopiuj cały folder skilla, a nie sam `SKILL.md`, bo `polszczyzna` ma jeszcze podfolder `references`.
 
-**Claude.ai.** Skille wgrywa się jako plik `.zip` z folderem skilla, w ustawieniach, w sekcji Skills:
+**Claude.ai:** spakuj folder skilla do `.zip` i wgraj go w ustawieniach, w sekcji Skills.
 
 ```bash
 cd claude-skills-pl/skills
 zip -r polszczyzna.zip polszczyzna
 ```
 
-## Struktura repozytorium
+## Co się zmieniło w wersji 2.0.0?
 
-```
-claude-skills-pl/
-├── .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── skills/
-│   ├── polszczyzna/
-│   │   ├── SKILL.md
-│   │   └── references/
-│   │       ├── WARSZTAT.md
-│   │       └── WZORCE_AI.md
-│   ├── komunikacja-kancelaryjna/
-│   │   └── SKILL.md
-│   └── legal-style-pl/
-│       └── SKILL.md
-├── LICENSE
-└── README.md
-```
-
-## Historia zmian
-
-**2.0.0.** Usunięto `humanizer-pl`. Wykrywanie i usuwanie znamion tekstu AI przejął `polszczyzna`, który łączy je z warstwą warsztatową. Dodano `komunikacja-kancelaryjna`. `legal-style-pl` nie zależy już od żadnego innego skilla. Wszystkie skille mają jednolity frontmatter, licencję MIT i oznaczenie autora.
+**2.0.0.** Usunąłem `humanizer-pl`. Jego zadanie przejął `polszczyzna`, który łączy wykrywanie wzorców AI z warsztatem pisania. Doszedł `komunikacja-kancelaryjna`. `legal-style-pl` nie zależy już od innych skilli. Wszystkie skille mają jednolity frontmatter, licencję MIT i oznaczenie autora.
 
 **1.0.0.** Pierwsze wydanie: `humanizer-pl` i `legal-style-pl`.
+
+## Wdrożenie Claude w kancelarii i dziale prawnym
+
+Te skille powstały przy mojej pracy radcy prawnego i używam ich codziennie. Jeśli chcesz dopasować je do stylu swojej kancelarii albo wdrożyć Claude w pracy z dokumentami, napisz do mnie przez [kancelariapaszkiewicz.pl/kontakt](https://kancelariapaszkiewicz.pl/kontakt).
+
+Przepisy, orzecznictwo i dane z rejestrów, na których tekst prawniczy ma się opierać, daje [Lawtern](https://lawtern.com).
+
+Błąd w skillu albo pomysł na zmianę zgłoś w [Issues](https://github.com/paszkiewiczmichal/claude-skills-pl/issues).
 
 ## Źródła
 
 - Poradnia Językowa PWN, Wielki słownik ortograficzny PWN, Nowy słownik poprawnej polszczyzny PWN, rozstrzygnięcia Rady Języka Polskiego.
-- Kodeks Etyki Radcy Prawnego (tekst jednolity, uchwała nr 884/XI/2023 Prezydium KRRP) i ustawa z 6 lipca 1982 r. o radcach prawnych.
-- Rozporządzenie Prezesa Rady Ministrów z 20 czerwca 2002 r. w sprawie Zasad Techniki Prawodawczej.
+- Kodeks Etyki Radcy Prawnego (tekst jednolity, uchwała nr 884/XI/2023 Prezydium KRRP) i ustawa z dnia 6 lipca 1982 r. o radcach prawnych.
+- Rozporządzenie Prezesa Rady Ministrów z dnia 20 czerwca 2002 r. w sprawie „Zasad techniki prawodawczej”.
 
 ## Licencja
 
