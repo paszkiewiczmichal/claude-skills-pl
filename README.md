@@ -1,6 +1,6 @@
 # claude-skills-pl
 
-Claude pisze po polsku poprawnie, ale po kilku zdaniach widać, że to tekst z modelu: „odgrywa kluczową rolę”, trzy przymiotniki z rzędu, długi myślnik przeniesiony z angielskiego, „daj znać, jeśli…” na końcu maila. Klient to zauważa. Sędzia też.
+Claude pisze po polsku poprawnie, ale po kilku zdaniach widać, że to tekst z modelu „odgrywa kluczową rolę”, trzy przymiotniki z rzędu, długi myślnik przeniesiony z angielskiego, „daj znać, jeśli…” na końcu maila. Klient to zauważa. Sędzia też.
 
 Napisałem te trzy skille do własnej pracy w kancelarii. Uczą Claude pisać tak, jak pisze uważny polski autor, a przy umowach, pismach i korespondencji z klientem tak, jak pisze radca prawny.
 
@@ -32,7 +32,7 @@ Skill zna swoje granice. Przy tekście prawniczym wyłącza reguły, które by g
 
 Mail do klienta, notatka dla współpracownika i pismo do urzędu wymagają trzech różnych rejestrów. Skill rozpoznaje adresata, rodzaj sprawy i pilność, dobiera układ i ton, a przed oddaniem szkicu przechodzi listę kontrolną.
 
-- **Cztery typy klienta:** instytucjonalny, wierzyciel w upadłości lub restrukturyzacji, osoba fizyczna i konsument. Każdy dostaje inny poziom formalności.
+- **Różne typy klienta:** instytucjonalny, wierzyciel w upadłości lub restrukturyzacji, osoba fizyczna i konsument. Każdy dostaje inny poziom formalności.
 - **Kodeks Etyki Radcy Prawnego:** wiadomość mówi o skutkach czynności, a nie tylko o tym, że ją wykonano (art. 44 ust. 1). Prośba o zgodę wyjaśnia skutki, zagrożenia i inne możliwości (art. 5 pkt 9).
 - **Pilność:** skill wychwytuje niepokój w wiadomości od klienta i odpowiada na niego w pierwszym zdaniu.
 - **Tajemnica zawodowa:** przed wysłaniem sprawdza adresatów, kopie i cytowaną historię wątku.
